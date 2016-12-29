@@ -14,6 +14,12 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     @IBOutlet weak var statePickerBtn: UIButton!
     
     let states = ["NA LCS", "EU LCS", "LCK", "LPL", "LMS"]
+    let teamNa = ["Cloud9", "TSM", "Immortal", "Echo Fox", "Counter Logic Gaming", "Team Envy", "NRG Esports", "Liquid", "Apex"]
+    let teamEu = ["Origen", "G2 Esport", "H2K", "ROCCAT", "Fnatic", "Giants", "Unicom of Love", "Splyce", "FC Schalke 04"]
+    let teamLck = ["CJ ENTUS", "Samsung Galaxy", "ROX Tigers", "KT Rolster", "SK Telecom T1", "MVP", "ESC Ever"]
+    let teamLpl = ["Edward Gaming", "NewBee", "Snake Esports", "Royal Never Give Up", "LGD Gaming", "I May", "OMG", "Vici Gaming"]
+    let teamLms = ["J Team", "Machi", "Flash Wolves", "ahq e-Sports Club", "Hong Kong Esports", "Team Mist", "Mid Night Sun"]
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,11 +39,13 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 1
+        return 2
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return states.count
+        
+        
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
