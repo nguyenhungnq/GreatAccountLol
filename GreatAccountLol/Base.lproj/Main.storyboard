@@ -93,6 +93,9 @@
                                     <constraint firstAttribute="width" constant="153" id="tJL-3V-bMO"/>
                                 </constraints>
                                 <state key="normal" title="Choose Your District"/>
+                                <connections>
+                                    <action selector="stateBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nbz-pY-BYB"/>
+                                </connections>
                             </button>
                             <pickerView hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HHM-RN-uSa">
                                 <constraints>
@@ -134,6 +137,7 @@
                     </view>
                     <connections>
                         <outlet property="statePicker" destination="HHM-RN-uSa" id="81D-5D-mYP"/>
+                        <outlet property="statePickerBtn" destination="jzc-sM-Tzo" id="lrd-vg-mei"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
