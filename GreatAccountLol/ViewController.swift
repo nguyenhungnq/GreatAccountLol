@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var statePicker: UIPickerView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //self.view.backgroundColor = UIColor.purple
